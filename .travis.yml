@@ -18,6 +18,14 @@ stages:
 
 matrix:
   include:
+
+    - os: linux
+      dist: bionic
+      arch: s390x
+      env:
+       - TARGET=java
+       - GROUP=ALL
+      stage: extended-test
     - os: linux
       dist: xenial
       compiler: clang
