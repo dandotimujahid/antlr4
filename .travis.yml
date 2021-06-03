@@ -22,6 +22,10 @@ matrix:
     - os: linux
       dist: bionic
       arch: s390x
+      addons:
+        apt:
+         packages:
+         - maven
       env:
        - TARGET=java
        - GROUP=ALL
